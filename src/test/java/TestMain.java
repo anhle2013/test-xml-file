@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestMain {
     Main testMain = new Main();
-//
+
     @Test
     void testGetLocalDateTimeListFromXmlFile() throws ParserConfigurationException, IOException, SAXException {
         File fXmlFile = new File("testFile/testFile1.xml");

@@ -20,66 +20,14 @@ public class Main {
     public static void main(String[] argv) {
         Main main = new Main();
         try {
-            File fXmlFile = new File("testFile/testFile1.xml");
-//            File fXmlFile = new File("data_java-2.xml");
+            File fXmlFile = new File("data_java-2.xml");
             Set<PeriodTime> dateTimes = main.getLocalDateTimeListFromXmlFile(fXmlFile);
-            System.out.println("dateTimes");
-            System.out.println(dateTimes);
-            System.out.println(dateTimes.size());
 
             ArrayList<PeriodTime> workingTimes = main.getPartitionByPeriodTime(dateTimes);
-            System.out.println("workingTimes");
-            System.out.println(workingTimes);
-            System.out.println(workingTimes.size());
 
             ArrayList<PeriodTime> emptyIntervals = main.getEmptyIntervals(workingTimes);
             System.out.println("emptyIntervals: ");
             System.out.println(emptyIntervals);
-            System.out.println(emptyIntervals.size());
-
-
-//            Set<People> list = new TreeSet<>();
-//            People demo1 = new People("Anh", "Anh");
-//            People demo2 = new People("Le", "Le");
-//            People demo3 = new People("Anh", "anh");
-//            People demo4 = new People("Anh", "Anh");
-//            People demo5 = new People("anh", "Annh");
-//            list.add(demo1);
-//            System.out.println(list.size());
-//            list.add(demo2);
-//            System.out.println(list.size());
-//            list.add(demo3);
-//            System.out.println(list.size());
-//            list.add(demo4);
-//            System.out.println(list.size());
-//            list.add(demo5);
-//            System.out.println(list.size());
-
-
-//            Set<PeriodTime> list = new TreeSet<>();
-//            LocalDateTime date1 = LocalDateTime.of(2015,1,28,10,15);
-//            LocalDateTime date2 = LocalDateTime.of(2015,1,28,11,0);
-//            LocalDateTime date3 = LocalDateTime.of(2015,1,28,14,10);
-//            LocalDateTime date4 = LocalDateTime.of(2015,1,28,14,30);
-//            LocalDateTime date5 = LocalDateTime.of(2015,1,28,16,20);
-//            PeriodTime demo1 = new PeriodTime(date1,date2);
-//            PeriodTime demo2 = new PeriodTime(date2,date3);
-//            PeriodTime demo3 = new PeriodTime(date2,date4);
-//            PeriodTime demo4 = new PeriodTime(date1,date4);
-//            PeriodTime demo5 = new PeriodTime(date1,date2);
-//            list.add(demo1);
-//            System.out.println(list.size());
-//            list.add(demo2);
-//            System.out.println(list.size());
-//            list.add(demo3);
-//            System.out.println(list.size());
-//            list.add(demo4);
-//            System.out.println(list.size());
-//            list.add(demo5);
-//            System.out.println(list.size());
-//            System.out.println(list);
-
-
 
         } catch (Exception e) {
             e.printStackTrace();

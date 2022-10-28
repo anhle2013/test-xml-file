@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestMain" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-10-28T04:25:35" hostname="DESKTOP-JJE362K" time="0.153">
+  <properties/>
+  <testcase name="testGetEmptyIntervals()" classname="TestMain" time="0.05"/>
+  <testcase name="testGetLocalDateTimeListFromXmlFile()" classname="TestMain" time="0.099"/>
+  <testcase name="testGetPartitionByPeriodTime()" classname="TestMain" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
